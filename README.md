@@ -21,20 +21,20 @@ we have three different levels-
 In this repo  contain  3 .txt file inside code through which you can fill the sudoku or make quizes by yourself just by putting the numbers.
 
 # Algorithm
-The algorithm which we are going to use in this particular code is *Backtracking* The way backtracking works to solve a Sudoku is that it solves the board from top-left tile to bottom-right tile. It tries a 'move' and if the move works according to Sudoku rules, do the same on the next tile. If no moves are valid, go back a tile and continue from where it was. Repeat the process until there is a solution to the Sudoku. The complexity is of O(n^2). Backtracking is implemented by recursion.
+The algorithm which we are going to use in this particular code is *Backtracking* A backtracking algorithm is a recursive algorithm that attempts to solve a given problem by testing all possible paths towards a solution until a solution is found. Each time a path is tested, if a solution is not found, the algorithm backtracks to test another possible path and so on till a solution is found or all paths have been tested.
+The typical scenario where a backtracking algorithm is when you try to find your way out in a maze. Every time you reach a dead-end, you backtrack to try another path untill you find the exit or all path have been explored.
+The way backtracking works to solve a Sudoku is that it solves the board from top-left tile to bottom-right tile. It tries a 'move' and if the move works according to Sudoku rules, do the same on the next tile. If no moves are valid, go back a tile and continue from where it was. Repeat the process until there is a solution to the Sudoku. The complexity is of O(n^2). Backtracking is implemented by recursion.
 
 # Working
 This program generates its own Sudoku and randomly generating filling up the Sudoku, then solve the Sudoku, and make hole in the solution board according to the difficulty. This is faster and more reliable than purely generating a board by filling up the Sudoku with X amount of givens, because often there were no solutions. Board generated properly are stored in a file such that if the program takes too long to generate a random board, it can access randomly a pre-generated board for a faster and reliable user-experience.
 
 # Run
-To play the game just give this command in cmd-
 
     python sudoku.py
     
 To give the input of numbers in game just Press on a tile to increment the tile's move to 1. Press X amount of times, to have desired move. To reset tile to an empty tile, simply press on tile when it is at 9.
 
-I hope you people enjoyed the game.
-So, That's all for now!
+Hope this will Help
 
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-swag.svg)](https://forthebadge.com)
